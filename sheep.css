@@ -1,8 +1,9 @@
 #header
 {
     margin-left: -60px; 
-    background-color: blue;
+    background-color: black;
    height: auto;
+  margin-bottom: -15px;
 
 } 
 body
@@ -21,6 +22,9 @@ body
     display:flex;
     justify-content: space-between;
     border:solid; 
+margin-top: -5px;
+background-color: burlywood;
+
 }
 
 .button{
@@ -46,18 +50,7 @@ body
     
 }
 
-/* .picture{
-    background: url('https://images.unsplash.com/photo-1623227413711-25ee4388dae3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2072&q=80');
-    background-size: cover;
-    background-position: center;
-    position: absolute;
-    top: -25px;
-    left: 219px;
-    border-radius: 50%;
-    box-shadow: 5px 5px 10px rgba(0,0,0,0.5);
-    height: 100px;
-    width: 100px;
-} */
+
 
 
 h3{
@@ -66,13 +59,13 @@ h3{
 
 .tweetbox {
     border: solid;
-    border-color: black;
+    border-color: white;
 }
 
 
  .tweetbox {
     text-align: center;
-    color: black;
+    color: white;
 }
 
 ul.navbar-nav{
@@ -83,12 +76,7 @@ ul.navbar-nav{
 
 }
 
-/* body{
-    background-image: url('https://media.istockphoto.com/photos/abstract-graphic-world-map-illustration-on-blue-background-big-data-picture-id1294021851?b=1&k=20&m=1294021851&s=170667a&w=0&h=vsypj3JPqiWOU5q21fX3lHt1Z7wphVNE8kfqdpogPSs=');
-    background-repeat: inherit;
-    background-size: 100%;
-    
-} */
+
 
 #coincontainer{
     display:flex;
@@ -96,13 +84,24 @@ ul.navbar-nav{
     flex-wrap: wrap;
     margin-top: 25px;
     justify-content: space-between;
+    margin-left: auto;
 }
 #title{
 font-family: serif
-
 }
 
+.card{
+    justify-content: space-between;
+    margin-top: 10px;
+    padding-left:20px;
+    padding-right: 20px;
+ 
+}
 
+.search-container{
+display: flex;
+justify-content: right;
+}
 
 
 
