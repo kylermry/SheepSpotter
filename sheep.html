@@ -3,95 +3,119 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script> 
-
+    <link rel="stylesheet" href="test.css">
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
-    <link href="sheep.css" rel="stylesheet"> 
-  </head>
+</head>
 <body>
-  <div id="header">
-    <!-- <nav class="navbar navbar-expand-lg navbar-light bg-light">        
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav"> -->
-          <a class="" href="#">Home</a>
-          <a class="" href="#">About Us<span class="sr-only"></span></a>
-          <a class="" href="#">Hot Picks</a>    
-          <a class="" href="#">Pricing</a>    
-        <!-- </ul>
-      </div>
-    </nav> -->
-  </div>
-  <br>
-<div class="container">
-  <div class="maincard" id="coincontainer">
-    <div class="card" style="width: 18rem;">
-      <!-- <div class="picture"></div> -->
-      <div id="title"><h3></h3></div>
-          <div id="price"><h3>Price:</h3></div>
-          <div id="marketcap"><h3>Marketcap:</h3></div>
-        <div class="card-body">
-          <h5 class="card-title"></h5>
-         
-          <p class="tweetbox" >This will display some of the crypto tweets.</p>
+    <div class="topnav">
+        <div class="ssheader">
+            <h1>Sheep Spotter</h1>
         </div>
-        <ul class="list-group list-group-flush">
-          <li class="list-group-item">An item</li>
-          <li class="list-group-item">A second item</li>
-          <li class="list-group-item">A third item</li>
+        <div class="navbar">
+            <nav class="navlink">
+                <ul>
+                    <list class="navitems">Home</li>
+                        <li class="navitems">About Us</li>
+                        <li class="navitems">Pricing</li>
+                </ul>
+        </div>
+        </nav>
+    </div>
+ <div class="maincontainer">
+    <div class="main1">
+        <ul class="cards" id="cardcontainer">
+            <li class="cards_item">
+                <div class="card">
+                    <div class="card_image"><img
+                            src="https://images.unsplash.com/photo-1519162584292-56dfc9eb5db4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8Yml0Y29pbnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=1000&q=60">
+                    </div>
+                    <div class="card_content">
+                        <h2 class="card_title" id="btc"></h2>
+                        <p class="card_text" id = "pricebtc">Price</p>
+                        <div class="tweetbox">
+                            <a href="https://twitter.com/intent/tweet?button_hashtag=tweet&ref_src=twsrc%5Etfw"
+                                class="twitter-hashtag-button" data-show-count="false">Tweet #tweet</a>
+                            <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                        </div>
+                        <button class="btn card_btn">Buy</button>
+                    </div>
+                </div>
+            </li>
         </ul>
-        <div class="card-body">
-          <form>
-            <button formaction="https://coinmarketcap.com/currencies/bitcoin/" class="buttonbtc">Buy BTC</button>
-          </form>
-        </div>
-      </div>
-  </div>  
-  
+    </div>
 
+   
+    <div class="main2">
+        <ul class="cards" id="cardcontainer">
+            <li class="cards_item">
+                <div class="card">
+                    <div class="card_image"><img
+                            src="https://images.unsplash.com/photo-1519162584292-56dfc9eb5db4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8Yml0Y29pbnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=1000&q=60">
+                    </div>
+                    <div class="card_content">
+                        <h2 class="card_title" id="namexrp"></h2>
+                        <p class="card_text" id = "pricexrp">Price</p>
+                        <div class="tweetbox">
+                            <a href="https://twitter.com/intent/tweet?button_hashtag=tweet&ref_src=twsrc%5Etfw"
+                                class="twitter-hashtag-button" data-show-count="false">Tweet #tweet</a>
+                            <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                        </div>
+                        <button class="btn card_btn">Buy</button>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+    <div class="main3">
+        <ul class="cards" id="cardcontainer">
+            <li class="cards_item">
+                <div class="card">
+                    <div class="card_image"><img
+                            src="https://images.unsplash.com/photo-1519162584292-56dfc9eb5db4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8Yml0Y29pbnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=1000&q=60">
+                    </div>
+                    <div class="card_content">
+                        <h2 class="card_title" id="ethname"></h2>
+                        <p class="card_text" id = "ethprice">Price</p>
+                        <div class="tweetbox">
+                            <a href="https://twitter.com/intent/tweet?button_hashtag=tweet&ref_src=twsrc%5Etfw"
+                                class="twitter-hashtag-button" data-show-count="false">Tweet #tweet</a>
+                            <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                        </div>
+                        <button class="btn card_btn">Buy</button>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <div class="main4">
+        <ul class="cards" id="cardcontainer">
+            <li class="cards_item">
+                <div class="card">
+                    <div class="card_image"><img
+                            src="https://images.unsplash.com/photo-1519162584292-56dfc9eb5db4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8Yml0Y29pbnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=1000&q=60">
+                    </div>
+                    <div class="card_content">
+                        <h2 class="card_title" id="cardanoname"></h2>
+                        <p class="card_text" id = "cardanoprice">Price</p>
+                        <div class="tweetbox">
+                            <a href="https://twitter.com/intent/tweet?button_hashtag=tweet&ref_src=twsrc%5Etfw"
+                                class="twitter-hashtag-button" data-show-count="false">Tweet #tweet</a>
+                            <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                        </div>
+                        <button class="btn card_btn">Buy</button>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
 </div>
 
-      
-
-     <script>
-
-      // let title = document.getElementById("title")
-      // let marketcap = document.getElementById("marketcap")
-      // let price = document.getElementById("price")
-      let coincontainer = document.getElementById("coincontainer")
     
 
- function renderCoin(coinArray){
-   let coinhtml = coinArray.map((coinData) =>{
-
-     
-     return `<div class="card" style="width: 18rem;">
-      <div class="picture"></div>
-      <div id="title"><h3>${coinData.name}</h3></div>
-          <div id="price"><h3>Price: ${coinData.quote.USD.price}</h3></div>
-          <div id="marketcap"><h3>Marketcap: ${coinData.quote.USD.market_cap} </h3></div>
-        <div class="card-body">
-          <h5 class="card-title"></h5>
-         
-          <p class="tweetbox" >This will display some of the crypto tweets.</p>
-        </div>
-        <ul class="list-group list-group-flush">
-          <li class="list-group-item">An item</li>
-          <li class="list-group-item">A second item</li>
-          <li class="list-group-item">A third item</li>
-        </ul>
-        <div class="card-body">
-          <form>
-            <button formaction="https://coinmarketcap.com/currencies/bitcoin/" class="button">Buy ${coinData.name}</button>
-          </form>
-        </div>
-      </div>`
-   })
-       return coinhtml.join('')
-       
-     }
- 
+<script>
 
 
 
@@ -99,102 +123,54 @@
 
 
 
-      axios.get('https://cors-anywhere.herokuapp.com/https://pro-api.coinmarketcap.com/v1/cryptocurrency/listings/latest',{headers: {
+
+  axios.get('https://cors-anywhere.herokuapp.com/https://pro-api.coinmarketcap.com/v1/cryptocurrency/listings/latest',{headers: {
         'X-CMC_PRO_API_KEY': 'ded1f79c-b240-4721-8f51-25ef37f392c2',
       },}).then(function(resp){
          console.log(resp)
-          coincontainer.innerHTML = renderCoin(resp.data.data)
-          
+                //    coincontainer.innerHTML = renderCoin(resp.data.data.slice(0, 4))               
+      //Bitcoin              
+     let namebtc = document.getElementById("btc");
+     namebtc.innerHTML = `${resp.data.data[0].name}`
 
+     let pricebtc = document.getElementById("pricebtc")
+     pricebtc.innerHTML = `${resp.data.data[0].quote.USD.price}`
 
-        
-      
+    //XRP       
+    let xrp = document.getElementById("namexrp");
+     xrp.innerHTML = `${resp.data.data[5].name}`
 
-        //  let title = document.getElementById("titleBTC")
-        //  let marketcap = document.getElementById("marketcapBTC")
-        //  let price = document.getElementById("priceBTC")
+     let priceXRP = document.getElementById("pricexrp")
+     priceXRP.innerHTML = `${resp.data.data[5].quote.USD.price}`
 
-        //  title.innerHTML = `${resp.data.data[0].name}`
-        //  marketcap.innerHTML = `Marketcap ${resp.data.data[0].quote.USD.market_cap}`
-        //  price.innerHTML = `Price  ${resp.data.data[0].quote.USD.price}`
-        
-        // console.log(title.innerHTML)
-              
-       });
+    //ETH
+    let Ethereum = document.getElementById("ethname");
+     Ethereum.innerHTML = `${resp.data.data[1].name}`
 
-
-   
-
-
-
+     let ethprice = document.getElementById("ethprice")
+     ethprice.innerHTML = `${resp.data.data[1].quote.USD.price}`
 
 
 
+    //Cardano
+    let cardanoname = document.getElementById("cardanoname");
+     cardanoname.innerHTML = `${resp.data.data[7].name}`
 
-  
-      
-       
-
-
-
-
+     let cardanoprice = document.getElementById("cardanoprice")
+     cardanoprice.innerHTML = `${resp.data.data[7].quote.USD.price}`
 
 
 
+    });
 
+</script>    
 
-
-
-
-
-
-
-      //  axios.get('https://cors-anywhere.herokuapp.com/https://pro-api.coinmarketcap.com/v1/cryptocurrency/listings/latest',{headers: {
-      //   'X-CMC_PRO_API_KEY': 'ded1f79c-b240-4721-8f51-25ef37f392c2',
-      // },}).then(function(resp){
-      //    console.log(resp)
-
-      //    let title = document.getElementById("titleripple");
-      //    let marketcap = document.getElementById("marketcapripple");
-      //    let price = document.getElementById("priceripple");
-
-      // });
-
-
-
-
-      
-      
-      
-      
-      
-      // })
-      //  axios.get('https://cors-anywhere.herokuapp.com/https://api.twitter.com/2/tweets/counts/recent?query=',{headers: {
-      //   'Authorization': 'Bearer AAAAAAAAAAAAAAAAAAAAAHGrZQEAAAAAaz%2FChxHlH4TZgvOkRer%2F8Mf%2Fy7Y%3D0ccqky9PJEq9dmfMuS9rsfd8qTPFl8OZWGecOK9rfgrOvjYytH',
-      // },}).then(function(resp){
-      //    console.log(resp)
-      //  })
-
-     </script>
-   
-     
-   
-   
-   
-   
-    <script rel="stylesheet" href="sheep.css"></script>
-    <script src="sheep.js"></script>
-
-    <script>
-
-    
-
-
-
-
-
-
-    </script>
-    
 </body>
 </html>
+
+
+
+
+
+
+
